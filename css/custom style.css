@@ -8,7 +8,6 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-  
 }
 
 .custom-btn{
@@ -58,11 +57,9 @@ nav{
     background-image: linear-gradient( 90deg, black , rgba(29, 28, 28, 0.911) , black );
     border-top: 4px solid rgba(255, 0, 0, 0.808);
     border-bottom: 4px solid rgba(255, 0, 0, 0.808);
-    z-index: 1;
-    width: 100%;
+    z-index: 99;
+    width: 100vw;
 }
-
-
 
 nav img{
     height: 100px;
@@ -121,13 +118,6 @@ nav .active{
 /* showcase Ends here */
 
 /* feature section starts here */
-#all-features{
-    
-}
-
-#all-features .feature-icon{
-
-}
 
 #all-features .feature-icon img{
     border: 2px solid white; 
@@ -356,6 +346,13 @@ nav .active{
 
 
 /* extra small device style starts */
+@media (max-width:700px) {
+    *{
+        overflow-x: hidden;
+    }
+}
+
+
 @media(max-width: 440px){
 
     #showcase{
@@ -375,7 +372,7 @@ nav .active{
     }
 
     #mStar .mStar-left{
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
     #mStar .mStar-left img{
