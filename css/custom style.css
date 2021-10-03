@@ -1,0 +1,387 @@
+/* ---------------LARGE WINDOW DECORATION STARTS------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.custom-btn{
+    color: red;
+    background-color: white;
+    padding: 15px 30px;
+    font-weight: 800;
+    transition: 0.4s;
+}
+
+.custom-btn:hover{
+    color: white;
+    background-color: red;
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.726);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+#page-header{
+    min-height: 25vh;
+    color: white;
+    position: relative;
+}
+
+#page-header .container{
+    height: 100%;
+    text-align: center;
+    padding-top: 3%;
+    
+
+}
+
+.head-bg-1{
+    background-image: url("../img/album2.jpg");
+    background-attachment: fixed;
+}
+
+/* nav bar design starts */
+nav{
+    background-image: linear-gradient( 90deg, black , rgba(29, 28, 28, 0.911) , black );
+    border-top: 4px solid rgba(255, 0, 0, 0.808);
+    border-bottom: 4px solid rgba(255, 0, 0, 0.808);
+    z-index: 1;
+    width: 100%;
+}
+
+
+
+nav img{
+    height: 100px;
+}
+
+nav h3{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    letter-spacing: 1.52px;
+    word-spacing: -4px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: rgba(167, 164, 164, 0.945);
+    text-transform: uppercase;
+    margin: 4px 15px;
+    font-weight: bold;
+    padding: 8px 50px;
+    transition: .5s;
+    font-size: .8rem;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+nav .active{
+    background-color: black;
+    box-shadow: 0px 0px 70px 10px rgba(245, 222, 179, 0.678);
+    border-radius: 4px;
+    color: white;
+}
+/* nav bar design Ends */
+
+/* showcase starts from here */
+#showcase{
+    background-image: url("../img/bg-showcase.jpg");
+    background-size: cover;
+    position: relative;
+    min-height: 80vh;
+  
+}
+
+
+#showcase h1{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#showcase h3{
+  background-color: rgba(255, 1, 1, 0.473);
+  min-width: 600px;
+  font-size: 3rem;
+  padding: 10px 40px;
+}
+/* showcase Ends here */
+
+/* feature section starts here */
+#all-features{
+    
+}
+
+#all-features .feature-icon{
+
+}
+
+#all-features .feature-icon img{
+    border: 2px solid white; 
+    padding: 20px;
+    border-radius:20px;
+    transition: .3s;
+}
+
+#all-features .feature-icon img:hover{
+    filter: grayscale(1);
+}
+/* feature section Ends here */
+
+
+/* music star section starts from here */
+#mStar{
+    min-height: 80vh ; 
+    overflow: hidden;
+}
+
+#mStar .mStar-left{
+    min-height: 80vh;
+}
+
+#mStar .mStar-left img{
+   height: 80vh;
+}
+
+#mStar .mStar-right{
+    padding-top: 8%;
+}
+
+#mStar .mStar-right .mStart-text{
+    position: absolute;
+    left: -10%;
+}
+
+#mStar .custom-btn{
+    font-size: 12px;
+    padding: 10px 50px;
+    border-radius: 0;
+    transition: ease-in .3s;
+}
+
+#mStar .custom-btn:hover{
+    background-color: black;
+    color: red ;
+}
+/* music star section Ends here */
+
+/* albums box design starts */
+
+#album-box .card{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#album-box .card-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.322);
+    color: white;
+    opacity: 0;
+    transition: .3s ease-in;
+    transform: scale(2);
+}
+
+#album-box .card:hover .card-overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+/* albums box design Ends */
+
+/* Newsletter starts from here*/
+#newsLetter{
+    background-color: rgb(235, 39, 32);
+    padding: 30px 0;
+}
+
+#newsLetter input{
+    width: 100%;
+}
+
+#newsLetter .in-text{
+    padding: 25px 30px!important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsLetter .btn{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: .3s ease-out;
+   padding: 13.5px 0!important;
+}
+
+#newsLetter .btn:hover{
+    background-color: white;
+    color: black;
+}
+/* Newsletter ends here */
+
+/* Footer contact deign start from here  */
+
+#foot-contact{
+    background-color: black;
+    padding: 4% 0;
+}
+
+#foot-contact .contact-left i{
+    font-size: 22px;
+}
+
+.contact-form ::placeholder{
+    color: rgb(37, 34, 34) !important;
+    font-weight: 500;
+}
+
+.contact-form input, .contact-form textarea{
+    border-radius: 12px;
+}
+/* Footer contact deign Ends here  */
+
+/* footer design starts  */
+footer .foot-name{
+    color: red;
+    font-weight: bold; 
+    margin-left: 5px;
+    transition: .3s;
+    cursor: grab;
+}
+
+footer .foot-name:hover{
+    color: black;
+  
+}
+/* footer design Ends */
+
+/* About us page design starts */
+
+/* About us page design Ends */
+
+/* ---------------LARGE WINDOW DECORATION ENds------------ */
+
+/* for laptop view start */
+@media(max-width: 992px){
+    /* mmusic star */
+    #mStar .mStar-left img{
+        width: 100%;
+    }
+
+    #mStar .mStar-right .mStart-text{
+        position: initial;
+    }
+    
+    #mStar .mStar-right{
+        padding-left: 60px;
+        padding-bottom: 60px;
+        padding-right: 10px;
+    }
+
+    /* mmusic star DOne*/
+}
+/* for laptop view Ends */
+
+
+/* small device style starts */
+@media(max-width: 768px){
+
+/* navbar start */
+
+nav{
+    z-index: 1;
+    width: 100%;
+}
+
+nav img{
+    height: 70px;
+}
+
+#nav-menu{
+     text-align: center;
+}   
+
+nav .active{
+    background-color: rgba(255, 255, 255, 0.747);
+    box-shadow: 0px 0px 70px  rgba(245, 222, 179, 0.678);
+    border-radius: 4px;
+    color: black;
+}
+
+.nav-btn{
+    height: 50px;
+}
+
+.nav-link:hover{
+    color: rgba(255, 0, 0, 0.808);
+}
+
+/* navbar Ends */
+
+/* showcase start */
+#showcase{
+    min-height: 80vh;
+}
+
+#showcase h1{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#showcase h3{
+  min-width: 300px;
+  font-size: 2rem;
+  padding: 10px 40px;
+}
+/* showcase Ends */
+
+}
+/* small device style Ends */
+
+
+/* extra small device style starts */
+@media(max-width: 440px){
+
+    #showcase{
+      min-height: 60vh;  
+    }
+
+    #showcase h1{
+        font-size: 1.4rem;
+        font-weight: bolder;
+    }
+
+    #showcase h3{
+        background-color: rgba(223, 14, 14, 0.438);
+        min-width: 300px;
+        font-size: 1.2rem;
+        padding: 10px 4px;
+    }
+
+    #mStar .mStar-left{
+        min-height: 50vh;
+    }
+
+    #mStar .mStar-left img{
+        height: 50vh;
+        width: 100%;
+    }
+
+}
+/* extra small device style Ends */

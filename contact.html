@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/MusicGanga.png" type="image/x-icon">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- more css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- custom style link -->
+    <link rel="stylesheet" href="css/custom style.css">
+       
+</head>
+<body>
+    <!-- nav bar starts here -->
+    <nav class="nav-scroll navbar-expand-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex justify-content-around align-items-center">
+                  <a href="index.html" class=" text-decoration-none">
+                    <div class=" navbar-brand  d-flex align-items-center">
+                      <img src="img/nav logo.png" alt="Music Ganga"> <h3 class=" text-white">Music Ganga</h3>
+                    </div>
+                  </a>
+                  <button class="nav-btn btn navbar-toggler" data-toggle="collapse" data-target="#nav-menu" > <i class=" fa fa-bars text-white"></i> </button>
+                </div>
+  
+                <div class="col-lg-8 d-flex align-items-center">
+                  <div class="collapse navbar-collapse" id="nav-menu">
+                    <ul class="navbar-nav ml-auto ">
+                      <li class=" nav-item"><a class=" nav-link " href="index.html">Home</a></li>
+                      <li class=" nav-item"><a class=" nav-link" href="about.html">About</a></li>
+                      <li class=" nav-item"><a class=" nav-link" href="albums.html">albums</a></li>
+                      <li class=" nav-item"><a class=" nav-link" href="blog.html">blog</a></li>
+                      <li class=" nav-item"><a class=" nav-link active" href="contact.html">contact</a></li>
+                      <li class=" nav-item"><a class=" nav-link" data-toggle="modal" href="#loginModal">login</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>  
+      </nav>
+      <!-- nav bar Ends -->
+
+    <!-- page header starts from here -->
+    <section id="page-header" class="head-bg-1" data-aos="zoom-in-down" data-aos-delay="00" data-aos-duration="1000">
+      <div class="dark-overlay">
+          <div class="container">
+              <h1 class=" display-4 font-weight-bold">Contact Us</h1>
+          </div>
+      </div>
+  </section>
+  <!-- page header ENds here -->  
+
+    <!-- contact us section edit starts from here -->
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-7 col-md-10 ">
+            <div class="card py-5 my-5" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+              <div class="">
+                <h3 class="text-center font-weight-bolder">Get In Touch</h3>
+              </div>
+                <div class="contact-form" style="padding: 10px 50px;">
+                    <form action="">
+                    <input type="text"  placeholder="Name" class=" form-control py-4 my-3" >
+                    <input type="text"  placeholder="Phone" class=" form-control py-4 my-3" >
+                    <input type="email"  placeholder="Email" class=" form-control py-4 my-3" >
+                    <textarea name="" id="" rows="3" placeholder="Message" class=" form-control py-4 my-3" ></textarea>
+                    <br>
+                    <input type="submit" value="Send" class="btn btn-light custom-btn px-5 py-3">
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- contact us section edit Ends here -->
+
+
+      <!-- footer contact section ENds  here -->
+  
+      <!-- footer starts -->
+      <footer class="text-center pt-4 pb-1" style="background-color: black;">
+        <p class="lead text-white"> &copy; 2021 Design Stolen. Developed by <span class="foot-name">Akash</span> </p>
+      </footer>
+      <!-- footer Ends -->
+
+          <!-- login modal start from here -->
+    <section id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <div class="card modal-card">
+              <div class="card-header">
+                <h3 class=" font-weight-bolder">Login Here</h3>
+              </div>
+              <div class="card-body contact-form">
+                <form action="" class="was-validated">
+                  <div class="form-group">
+                      <input type="email"  placeholder="Email or Number" required class=" form-control py-4 my-3">
+                      <div class=" valid-feedback">&nbsp;Valid</div>
+                      <div class=" invalid-feedback">&nbsp;Invalid</div>
+                  </div>
+                  <div class="form-group">
+                      <input type="text"  placeholder="Password" required class=" form-control py-4 my-3">
+                      <div class=" valid-feedback">&nbsp; Valid</div>
+                      <div class=" invalid-feedback"> &nbsp; Invalid</div>
+                  </div>
+                  <input type="submit" value="Login" class="btn custom-btn btn-block">
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- login modal Ends here -->
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    
+    <script>
+      AOS.init();
+    </script>
+   
+    
+</body>
+</html>
